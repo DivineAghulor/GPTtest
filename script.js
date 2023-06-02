@@ -14,8 +14,6 @@ document.addEventListener('DOMContentLoaded', function() {
       const taskName = document.getElementById('taskName').value;
       const taskTime = document.getElementById('taskTime').value;
       const taskDescription = document.getElementById('taskDescription').value;
-      const taskIndex = document.getElementById('taskIndex').value;
-  
       const taskBox = document.createElement('div');
       taskBox.classList.add('taskBox');
       taskBox.innerHTML = `${taskName} at ${taskTime}`;
@@ -32,7 +30,6 @@ document.addEventListener('DOMContentLoaded', function() {
         <p><strong>Task Name:</strong> ${taskName}</p>
         <p><strong>Time:</strong> ${taskTime}</p>
         <p><strong>Description:</strong> ${taskDescription}</p>
-        <p><strong>Index Number:</strong> ${taskIndex}</p>
       `;
   
       const deleteButton = document.createElement('button');
