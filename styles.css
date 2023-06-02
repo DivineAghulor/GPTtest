@@ -8,7 +8,7 @@ body {
   }
   
   button {
-    margin-left: 80%;
+    margin: auto
   }
   
   .addTaskButton{
@@ -34,6 +34,19 @@ body {
     transition: 0.4s
   }
 
+  .deleteButton{
+    margin-left: 80%;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #ffffff85;
+    color: black;
+    border:none;
+  }
+
+  .deleteButton:hover{
+    background-color: #4c4c4c;
+    color:#262626;
+  }
 
   #taskList {
     display: flex;

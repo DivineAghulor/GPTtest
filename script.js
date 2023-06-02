@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
       `;
   
       const deleteButton = document.createElement('button');
+      deleteButton.classList.add('deleteButton');
       deleteButton.innerHTML = 'Delete';
       deleteButton.addEventListener('click', function() {
         taskList.removeChild(taskBox);
