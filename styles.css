@@ -1,0 +1,144 @@
+:root {
+  --blue: rgb(9, 164, 236);
+}
+body {
+    /* background-color: #1a1a1a; */
+    color: white;
+    font-family: sans-serif;
+  }
+  
+  button {
+    margin: 10px;
+  }
+  
+  .addTaskButton{
+    padding: 10px 15px;
+    background-color: white;
+    color: var(--blue);
+    font-size: 30px;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    display: block;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px #bdbdbd;
+  }
+
+  .addTaskButton:hover{
+    background-color: #0f85ca;
+    color: white;
+    scale: 0.9;
+    transition: 0.4s
+  }
+
+
+  #taskList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 10px;
+  }
+  
+  .taskBox {
+    margin-left: auto;
+    margin-right: auto;
+    width: 48%;
+    height: auto;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #2c2c2c;
+    cursor: pointer;
+  }
+  
+  .expandedTask {
+    height: auto;
+    background-color: #4c4c4c;
+  }
+  
+  .taskDetails {
+    display: none;
+    margin-top: 10px;
+  }
+  
+  .taskBox:hover .taskButtons {
+    display: block;
+  }
+  
+  .taskButtons {
+    display: none;
+  }
+  
+  .taskButtons button {
+    margin: 5px;
+  }
+  
+  .modal {
+    display: block; 
+    /* remember to change display to none */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .modal-content {
+    background-color: #262626;
+    margin: 15% auto;
+    padding: 20px;
+    width: 50%;
+    border-radius: 10px;
+  }
+  
+  input[type=text], input[type=number], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 50%;
+    background-color:var(--blue);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+  }
+  
+  input[type=submit]:hover {
+    transition: 0.3s;
+    background-color: #0f85ca;
+  }
+  
+  .task-content{
+    color: aqua;
+    padding: auto 20px;
+  }
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
